@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Modern Indigo/Slate Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="60%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Glowing Accents Gradient -->
+    <linearGradient id="accent-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+
+    <!-- Glossy Overlay -->
+    <linearGradient id="gloss-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15" />
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- Drop Shadow for Letter B -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#020617" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Smooth Rounded Icon Container (PWA Maskable-safe zone inside 512x512) -->
+  <rect width="512" height="512" rx="112" fill="url(#bg-grad)" />
+  
+  <!-- Subtle inner border glow -->
+  <rect x="4" y="4" width="504" height="504" rx="108" fill="none" stroke="url(#accent-grad)" stroke-width="4" stroke-opacity="0.2" />
+
+  <!-- Monogram "B" with Embedded Financial Trend Metrics -->
+  <g filter="url(#shadow)">
+    <!-- Base stylized letter B -->
+    <path d="M160 130 C160 115 172 100 188 100 H280 C340 100 375 130 375 175 C375 210 350 232 315 240 C360 248 385 275 385 320 C385 375 345 412 280 412 H188 C172 412 160 397 160 382 V130 Z" fill="#ffffff" />
+    
+    <!-- Cut-outs/negative space in "B" showing background and dynamic charts -->
+    <!-- Top Bowl of B -->
+    <path d="M210 144 V216 H274 C304 216 322 202 322 180 C322 158 304 144 274 144 H210 Z" fill="#0f172a" opacity="0.95" />
+    <!-- Bottom Bowl of B -->
+    <path d="M210 256 V368 H276 C312 368 332 350 332 312 C332 274 312 256 276 256 H210 Z" fill="#0f172a" opacity="0.95" />
+  </g>
+
+  <!-- Growing Financial Bar Chart inside the bottom bowl of "B" -->
+  <g transform="translate(224, 280)">
+    <rect x="0" y="45" width="12" height="25" rx="2" fill="#38bdf8" />
+    <rect x="20" y="30" width="12" height="40" rx="2" fill="#6366f1" />
+    <rect x="40" y="10" width="12" height="60" rx="2" fill="url(#accent-grad)" />
+  </g>
+
+  <!-- Glowing Trend Line connecting the graph, sweeping through the "B" and pointing up and right -->
+  <path d="M130 390 L200 320 L270 335 L380 180 L440 160" fill="none" stroke="url(#accent-grad)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" filter="drop-shadow(0px 4px 10px rgba(56, 189, 248, 0.6))" />
+  
+  <!-- Trend line dynamic arrowhead / target node -->
+  <circle cx="440" cy="160" r="10" fill="#ffffff" />
+  <circle cx="440" cy="160" r="18" fill="none" stroke="#38bdf8" stroke-width="4" />
+
+  <!-- Premium Glassy/Shine Overlay -->
+  <path d="M 0 0 L 512 0 L 512 200 L 0 380 Z" fill="url(#gloss-grad)" pointer-events="none" />
+</svg>

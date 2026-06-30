@@ -1,0 +1,6 @@
+{
+  "name": "Budgetly",
+  "description": "Modern Budgeting & Forecasting System for Indonesian UMKM to manage finances, track budgets, analyze variance, and forecast cash flows.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
